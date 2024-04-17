@@ -110,6 +110,7 @@ h3 {
 }
 .sidebar {
   position: fixed;
+  padding-top: 50px;
 }
 .sidebar_item {
   margin: 30px 0 0 20px;
@@ -118,23 +119,22 @@ h3 {
   list-style-type: none;
   font-size: 20px;
 }
-#study1 {
+.sidebar ul p {
   font-size: 30px;
+  margin-top: 50px;
 }
-#study2 {
-  font-size: 30px;
-  margin-top: 30px;
-}
+
 .sidebar_item li {
   text-align: center;
-  margin: 20px 0 0 85px;
+  margin: 20px 0 0 0px;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
-  width: 100px;
+  border-radius: 100%;
+  width: 200px;
 }
 .sidebar_item li:hover {
-  border-bottom: 2px solid red;
-  border-right: 2px solid red;
+  border-bottom: 2px solid rgb(246, 86, 86);
+  border-right: 2px solid rgb(164, 5, 5);
   transform: translateY(-6px);
   transition-duration: 0.4s;
   transform-box: content-box;
@@ -203,4 +203,8 @@ h3 {
 .review_main {
   height: 1000px;
   background-color: white;
+}
+#there {
+  font-size: 300px;
+  text-align: center;
 }
