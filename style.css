@@ -49,7 +49,7 @@ body {
 .main .container {
   display: flex;
   justify-content: center;
-  padding-top: 70px;
+  padding-top: 130px;
 }
 #mainimg {
   border-radius: 15%;
@@ -97,7 +97,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
-  margin-top: 130px;
+  padding-top: 130px;
 }
 
 .card {
@@ -108,29 +108,42 @@ h3 {
   height: 333px;
   display: flex;
 }
-
+.sidebar {
+  position: fixed;
+}
 .sidebar_item {
   margin: 30px 0 0 20px;
 }
 .sidebar_item ul {
   list-style-type: none;
-  border-right: 1px solid black;
   font-size: 20px;
 }
+#study1 {
+  font-size: 30px;
+}
 #study2 {
+  font-size: 30px;
   margin-top: 30px;
 }
 .sidebar_item li {
   text-align: center;
-  margin: 20px 0 0 20px;
-  border-left: 2px solid black;
+  margin: 20px 0 0 85px;
   border-bottom: 2px solid black;
+  border-right: 2px solid black;
   width: 100px;
 }
+.sidebar_item li:hover {
+  border-bottom: 2px solid red;
+  border-right: 2px solid red;
+  transform: translateY(-6px);
+  transition-duration: 0.4s;
+  transform-box: content-box;
+}
+
 .sidebar_item a {
   text-decoration: none;
   color: #333333;
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .card-head {
@@ -139,12 +152,17 @@ h3 {
   border-bottom: 2px solid #333333;
   line-height: 50px;
 }
-
 .card-footer {
   height: 50px;
   background-color: transparent;
   line-height: 50px;
   border-bottom: 2px solid #333333;
+}
+
+.card:hover {
+  transform: translateY(10px);
+  transition-duration: 0.5s;
+  transform-box: content-box;
 }
 
 .member_container a {
@@ -155,7 +173,7 @@ h3 {
 .secon_container {
   display: flex;
   justify-content: center;
-  padding-top: 70px;
+  padding-top: 130px;
 }
 .secon_desc {
   display: flex;
@@ -169,7 +187,7 @@ h3 {
   font-size: 20px;
 }
 .review {
-  margin-top: 300px;
+  margin-top: 500px;
 }
 .review_header {
   display: flex;
