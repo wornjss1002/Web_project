@@ -29,30 +29,34 @@ body {
 .navbar ul {
   display: flex;
   list-style: none;
-  margin: 15px 0 0 0;
+  margin: 15px 0 0 15px;
 }
 .navbar ul li {
   margin-left: 20px;
   text-decoration: none;
   font-weight: bold;
+  border-bottom: 3px solid black;
 }
 .navbar ul li a {
   text-decoration: none;
   color: #333333;
 }
+
 .navbar ul li a:hover {
-  color: #757272;
+  color: brown;
   background-color: transparent;
-  text-decoration: underline;
+  border-top: solid brown;
+  border-bottom: solid brown;
 }
 
 .main .container {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 80px;
+  height: 100%;
 }
 #mainimg {
-  border-radius: 15%;
+  border-radius: 2%;
 }
 .main .maindesc {
   display: flex;
@@ -97,7 +101,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
-  padding-top: 130px;
+  padding-top: 30px;
 }
 
 .card {
@@ -110,7 +114,7 @@ h3 {
 }
 .sidebar {
   position: fixed;
-  padding-top: 50px;
+  padding-top: 5px;
 }
 .sidebar_item {
   margin: 30px 0 0 20px;
@@ -127,14 +131,14 @@ h3 {
 .sidebar_item li {
   text-align: center;
   margin: 20px 0 0 0px;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
+  border-bottom: 7px solid black;
+  border-right: 7px solid black;
   border-radius: 100%;
   width: 200px;
 }
 .sidebar_item li:hover {
-  border-bottom: 2px solid rgb(246, 86, 86);
-  border-right: 2px solid rgb(164, 5, 5);
+  border-bottom: 10px solid rgb(244, 9, 9);
+  border-right: 10px solid rgb(45, 6, 242);
   transform: translateY(-6px);
   transition-duration: 0.4s;
   transform-box: content-box;
@@ -230,4 +234,118 @@ th {
 }
 caption {
   font-size: 30px;
+}
+#connect {
+  display: flex;
+  justify-content: right;
+  font-size: 50px;
+  text-decoration: none;
+  margin: 30px 65px 0 0;
+}
+#connect button {
+  font-size: 30px;
+  border-radius: 5%;
+  background-color: transparent;
+}
+#connect button:hover {
+  color: white;
+  border-color: white;
+  background-image: url('https://i.pinimg.com/originals/62/39/4d/62394d753859943e6a1a36443ef78795.gif');
+  background-size: cover;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form input {
+  width: 200px;
+  height: 30px;
+}
+div,
+input,
+textarea {
+  box-sizing: border-box;
+}
+
+.form-background {
+  padding: 30px;
+}
+
+.form-white {
+  background-color: transparent;
+  padding: 30px;
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.form-input {
+  background-color: transparent;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.first-name {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  display: block;
+  margin-left: auto;
+}
+.button:hover {
+  border-color: white;
+  color: white;
+  background-image: url('https://i.pinimg.com/originals/62/39/4d/62394d753859943e6a1a36443ef78795.gif');
+}
+.form_item {
+  margin-top: 50px;
+}
+textarea {
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid black;
+}
+.boxmodel_container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.boxmodel_container h1 {
+  font-size: 50px;
+}
+.boxmodel_container h2 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.boxbox {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 30px;
+  border: 20px solid red;
+  background-color: blueviolet;
+  box-shadow: 0 0 0 20px blue;
+  margin-top: 60px;
+}
+.boxmodel_main {
+  display: flex;
+  margin-top: 100px;
+}
+
+.boxmodel_desc p {
+  font-size: 20px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  width: 500px;
 }
