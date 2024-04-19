@@ -56,20 +56,41 @@ body {
   border-top: solid brown;
   border-bottom: solid brown;
 }
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: stretch; /* 아이템의 너비를 컨테이너의 너비에 맞춰 확장 */
-  }
+.menu-icon {
+  display: none; /* 기본적으로 숨김 */
+  font-size: 24px;
+  cursor: pointer;
+}
 
+/* 미디어 쿼리 */
+@media (max-width: 768px) {
   .nav {
-    margin-top: 20px;
+    display: none; /* 기본적으로 숨김 */
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
   }
 
   .nav li {
     margin-left: 0;
-    margin-bottom: 10px;
-    text-align: center; /* 아이템 가운데 정렬 */
+    margin-top: 10px;
+  }
+
+  .menu-icon {
+    display: block; /* 화면 작아질 때 보임 */
+  }
+
+  .menu-toggle {
+    display: none; /* input 요소는 숨김 */
+  }
+
+  /* input 요소 체크 시 메뉴 표시 */
+  .menu-toggle:checked ~ .nav {
+    display: flex;
   }
 }
 .main .container {
