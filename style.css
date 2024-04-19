@@ -204,9 +204,18 @@ h3 {
 .review h1 {
   font-size: 50px;
 }
+.review h4 {
+  font-size: 50px;
+  text-align: center;
+}
 .review_main {
   height: 1000px;
   background-color: white;
+}
+.ahnlab {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 #there {
   font-size: 300px;
