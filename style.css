@@ -59,7 +59,7 @@ body {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch; /* 아이템의 너비를 컨테이너의 너비에 맞춰 확장 */
   }
 
   .nav {
@@ -69,6 +69,7 @@ body {
   .nav li {
     margin-left: 0;
     margin-bottom: 10px;
+    text-align: center; /* 아이템 가운데 정렬 */
   }
 }
 .main .container {
