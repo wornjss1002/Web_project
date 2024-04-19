@@ -244,6 +244,13 @@ p {
   gap: 20px;
   width: 600px;
 }
+.secon_desc a {
+  text-decoration: none;
+  color: #333333;
+}
+.secon_desc a:hover {
+  color: brown;
+}
 .secon_p p {
   margin-bottom: 25px;
   font-size: 20px;
@@ -267,7 +274,7 @@ p {
   text-align: center;
 }
 .review_main {
-  height: 1000px;
+  height: 700px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -284,10 +291,35 @@ p {
 .ahnlab_p p {
   margin-bottom: 20px;
 }
+.ahnlab_desc a {
+  text-decoration: none;
+  color: #333333;
+}
+.ahnlab_desc a:hover {
+  background-image: url('');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(21, 21, 125);
+}
 .ahnlab img {
-  width: 80%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
   border-radius: 5%;
+}
+.review_end {
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.review_end p {
+  text-align: center;
+  width: 80%;
+}
+.review_end p:nth-child(2) {
+  margin-top: 100px;
 }
 #there {
   font-size: 300px;
@@ -321,7 +353,7 @@ caption {
   justify-content: right;
   font-size: 50px;
   text-decoration: none;
-  margin: 30px 65px 0 0;
+  margin: 30px 6% 0 0;
 }
 #connect button {
   font-size: 30px;
