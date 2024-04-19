@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'TTLaundryGothicB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: 'TTLaundryGothicB';
 }
 body {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzd_4Igvlr0e1Ner4uZmFrYGdKRzie26YtiqVk8pcMQg&s');
@@ -65,12 +73,26 @@ body {
   margin-top: 20px;
   gap: 40px;
   width: 600px;
+  background-image: url('https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb2cb3060-e4e1-43fe-9980-0591c94ec8e8%2FLearn.gif&blockId=2a73376e-aac2-4b39-9568-441bbf3eed9a');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+.grade {
+  display: flex;
+}
+
 h2 {
   font-size: 40px;
 }
-h3 {
-  font-size: 25px;
+.main .maindesc img {
+  width: 30px;
+  height: 30px;
+}
+p {
+  font-size: 30px;
+}
+.grade p {
+  font-size: 30px;
 }
 .footer {
   display: flex;
