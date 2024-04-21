@@ -171,8 +171,8 @@ p {
   width: 200px;
 }
 .sidebar_item li:hover {
-  border-bottom: 10px solid rgb(244, 9, 9);
-  border-right: 10px solid rgb(45, 6, 242);
+  border-right: 10px solid rgb(244, 9, 9);
+  border-bottom: 10px solid rgb(45, 6, 242);
   transform: translateY(-6px);
   transition-duration: 0.4s;
   transform-box: content-box;
